@@ -54,14 +54,14 @@ android {
 mavenPublishing {
     publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
 
-//    signAllPublications()
+    signAllPublications()
 
     coordinates(group.toString(), "perk", version.toString())
 
     pom {
         name = "Perk"
         description =
-            "Multiplatform permission management library"
+            "Kotlin Multiplatform permission management library"
         inceptionYear = "2025"
         url = "https://github.com/hristogochev/perk/"
         licenses {
