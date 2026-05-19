@@ -25,7 +25,15 @@ kotlin {
     iosArm64()
     iosSimulatorArm64()
 
+    jvm("desktop") {
+        compilerOptions {
+            jvmTarget.set(JvmTarget.JVM_11)
+        }
+    }
+
     sourceSets {
+        val desktopMain by getting
+
         androidMain.dependencies {
             implementation(libs.compose.activity)
         }
@@ -35,6 +43,10 @@ kotlin {
             implementation(compose.foundation)
             implementation(compose.material3)
             implementation(compose.ui)
+        }
+
+        desktopMain.dependencies {
+            implementation(compose.desktop.currentOs)
         }
     }
 }
