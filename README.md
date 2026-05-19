@@ -10,7 +10,7 @@ To use this library, add `perk` as a dependency to your project:
 
 ```toml
 [versions]
-perk = "0.1.0"
+perk = "0.2.0"
 
 [libraries]
 perk = { module = "io.github.hristogochev:perk", version.ref = "perk" }

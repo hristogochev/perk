@@ -8,5 +8,5 @@ plugins {
 
 allprojects {
     group = "io.github.hristogochev"
-    version = "0.1.0"
+    version = "0.2.0"
 }
